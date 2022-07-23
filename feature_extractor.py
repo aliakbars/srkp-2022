@@ -16,7 +16,7 @@ def process_file(filename: str, vocab: List[str]) -> np.ndarray:
         vec = CountVectorizer(ngram_range=(1, 2), vocabulary=vocab)
         return vec.fit_transform(report).toarray().sum(axis=0)
 
-def process_folder(folder: str, vocab: List[str]) -> np.ndarray:
+def process_folder(folder: str, vocab: List[str]) -> pd.DataFrame:
     freq_matrix = []
     for filename in tqdm(os.listdir(folder)):
         try:
@@ -26,11 +26,16 @@ def process_folder(folder: str, vocab: List[str]) -> np.ndarray:
         except:
             print(filename)
     
-    return np.vstack(freq_matrix)
+    df = pd.DataFrame(np.vstack(freq_matrix), columns=vocab)
+    df["filename"] = [filename for filename in os.listdir(folder)]
+    return df
 
-if __name__ == "__main__":
+def main():
     folder = "data/statements/2018/"
     vocab = pd.read_csv("vocab.csv")
     matrix = process_folder(folder, vocab.token)
-    # assert len(os.listdir(folder)) == matrix.shape[0]
-    print(matrix)
+    assert len(os.listdir(folder)) == matrix.shape[0]
+    return matrix
+
+if __name__ == "__main__":
+    main()
