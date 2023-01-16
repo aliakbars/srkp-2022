@@ -4,6 +4,8 @@ Penulis: [Okiriza Wibisono](https://twitter.com/okiriza), [Ali Akbar Septiandri]
 
 Artikel ini diikutsertakan dalam Call for Paper Seminar Nasional Riset Kebijakan Perbankan (SRKP) Otoritas Jasa Keuangan (OJK) 2022
 
+Versi pracetak (preprint) dapat dilihat di [RINarxiv](https://rinarxiv.lipi.go.id/lipi/preprint/view/667)
+
 ## Abstrak
 
 Pandemi COVID-19 telah berdampak pada berbagai sektor sosial-ekonomi di seluruh dunia, termasuk sektor perbankan. Bank dituntut untuk dapat menyediakan layanan digital dan berkompetisi di ranah digital termasuk dengan fintech, di tengah pembatasan mobilitas yang berdampak pada penurunan aktivitas ekonomi dan kinerja keuangan debitur. Digitalisasi menjadi salah satu solusi untuk menjawab tantangan tersebut. Penelitian ini memaparkan metodologi alternatif untuk mengukur tingkat digital awareness sebagai indikator digitalisasi bank. Memanfaatkan metode natural language processing (NLP), indikator-indikator digital awareness bank dapat dibentuk secara otomatis dari jumlah kemunculan kata-kata terkait digitalisasi dalam laporan tahunan bank. Analisis regresi pada data 47 emiten bank di Indonesia menunjukkan indikator tersebut tidak signifikan memprediksi kinerja bank dalam jangka pendek pascapandemi COVID-19. Namun, mempertimbangkan kemudahannya untuk diterapkan, metodologi yang diajukan berpotensi dikembangkan lebih lanjut, antara lain untuk melengkapi hard indicators digitalisasi perbankan dan analisis dampak digitalisasi dalam jangka panjang.
